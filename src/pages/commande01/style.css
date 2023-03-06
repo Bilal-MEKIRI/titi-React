@@ -1,0 +1,434 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+header{
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#logo{
+  margin: 50px;
+}
+#logoImg{
+  width: 141px;
+  height: 95px;
+}
+
+#navigation{
+  height: 100px;
+  width: 900px;
+  margin: 50px;
+  color: black;
+}
+
+#button{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+nav{
+  width: 100%;
+  height: 50%;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+#sectionCommande{
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1253px;
+}
+
+#nosBurgers{
+  width: 40%;
+  height: 300px;
+}
+#nosBurgers2{
+  height: 300px;
+  width: 50%;
+}
+
+#clickAndCollect1{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+#clickAndCollect1 img{
+  width: 341px;
+  height: 90px;
+}
+
+
+#clickAndCollect2{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#images{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  color: #5F6368;
+}
+
+#nosBurgers h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #102940;
+  margin-bottom: 20px;
+}
+
+
+.line{
+  width: 1253px;
+  height: 3px;
+  margin: 0 100px;
+}
+
+.choixMenu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1253px;
+  margin: 35px auto;
+}
+
+.choixMenu p{
+  width: 479px;
+}
+.choixMenu h2{
+  width: 249px;
+  color: black;
+}
+.choixMenu div{
+  display: flex;
+  align-items: center;
+}
+.choixMenu img{
+  margin-right: 20px;
+  border-radius: 7px;
+}
+.choixMenu .menuImg{
+  width: 194px;
+  height: 205.64px;
+}
+
+.choixMenu .choix{
+  width: 56px;
+  height: 56px;
+}
+
+
+
+#lastSection{
+  padding: 50px;
+}
+
+#section{
+  height: 183px;
+  max-width: 1253px;
+  margin: 0 auto;
+  border-radius: 7px;
+  text-align: center;
+}
+
+#commencerButton{
+  width: 456px;
+  height: 89px;
+  margin: 50px auto;
+}
+
+.radioButton{
+  margin-right: 20px;
+  width: 56px;
+  height: 56px;
+  color: #576D8B;
+}
+
+.radioButton:hover{
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  background-color: #102940;
+  height: fit-content;
+  margin: 0 auto;
+  color: white;
+}
+
+#sectionFooter{
+  height: fit-content;
+  display: flex;
+  padding: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin: 0 auto;
+  max-width: 1100px;
+  justify-content: space-between;
+}
+
+#footer1{
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#footer2{
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#footer3{
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#footer4{
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#footer5{
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.socialMedia{
+  transition: all 0.4s;
+  margin-right: 10px;
+}
+.socialMedia:hover{
+  cursor: pointer;
+  background-color: #ff00ee;
+  border-radius: 80%;
+  transform: scale(1.1);
+}
+
+.footerLink{
+  transition: all 0.2s;
+}
+.footerLink:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  color: #ee56e4;
+}
+
+button{
+  margin-right: 70px;
+}
+
+ol{
+  display: flex;
+  justify-content: space-around;
+  padding:20px;
+}
+
+
+
+h1{
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: #D9ADD6;
+  font-family: 'Homeday';
+}
+
+h2, p{
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #494C4F;
+}
+p{
+  color: #979797;
+}
+
+
+
+h3{
+  margin: 20px 0;
+  font-size: 1.7rem;
+  
+}
+
+
+
+.footerLink{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+
+.socialMedia{
+  width: 58px;
+  height: 58px;
+  margin-bottom: 20px;
+}
+
+.navItems{
+  font-size: 1.1rem;
+  color: black;
+  text-decoration: none;
+}
+
+.navItems:hover{
+  font-size: 1.1rem;
+  color: rgb(239, 224, 58);
+  transform: scale(1.05);
+}
+
+button{
+  width: 200px;
+  height: 50px;
+  background-color: #D9ADD6;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.3rem;
+  transition: 0.2s;
+  color: white;
+}
+
+button:hover{
+ cursor: pointer;
+ background-color: #ee56e4;
+ transform: scale(1.03);
+ filter: brightness(80%);
+}
+
+
+@media (max-width: 800px) {
+
+  #sectionCommande{
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+  }
+  #nosBurgers{
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+    height: fit-content;
+  }
+  #nosBurgers2{
+    display: none;
+  }
+
+  .line{
+    width: auto;
+    margin: 5px auto;
+  }
+
+  #commencerButton{
+    width: 50%;
+  }
+
+  .burgers-list{
+    width: 100%;
+    text-align: center;
+  }
+
+  .choixMenu{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+  }
+  .choixMenu h2, p{
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .menuImg{
+    margin: 0;
+  }
+  .choixMenu img{
+    margin: 0;
+  }
+}
