@@ -1,4 +1,5 @@
-
+.clickAndcollect{
+  
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -44,8 +45,8 @@ table {
 }
 
 
-
 header{
+    background-image: none;
   height: 200px;
   display: flex;
   justify-content: space-between;
@@ -81,109 +82,45 @@ nav{
 }
 
 
-
-#sectionCommande{
-  height: 300px;
-  display: flex;
-  justify-content: space-between;
+.clickAndCollect{
+  height: fit-content;
   margin: 0 auto;
-  max-width: 1253px;
-}
-
-#nosBurgers{
-  width: 40%;
-  height: 300px;
-}
-#nosBurgers2{
-  height: 300px;
-  width: 50%;
-}
-
-#clickAndCollect1{
-  height: 50%;
-  width: 100%;
+  text-align: center;
+  margin: 60px auto;
+  width: fit-content;
   display: flex;
-  justify-content: end;
-}
-#clickAndCollect1 img{
-  width: 341px;
-  height: 90px;
-}
-
-
-#clickAndCollect2{
-  width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
-#images{
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-a{
-  text-decoration: none;
-  color: #5F6368;
+
+.clickAndCollect h1{
+  font-size: 5rem;
 }
 
-#nosBurgers h1{
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #102940;
-  margin-bottom: 20px;
+.clickAndCollect h2{
+  font-size: 3.7rem;
 }
 
-
-.line{
-  width: 1253px;
-  height: 3px;
-  margin: 0 100px;
+#imgLigne{
+  height: 69px;
+  width: 3px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.choixMenu{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  max-width: 1253px;
-  margin: 35px auto;
+.clickAndCollect p{
+  padding: 0 50px;
+  width: 60%;
 }
-
-.choixMenu p{
-  width: 479px;
-}
-.choixMenu h2{
-  width: 249px;
-  color: black;
-}
-.choixMenu div{
-  display: flex;
-  align-items: center;
-}
-.choixMenu img{
-  margin-right: 20px;
-  border-radius: 7px;
-}
-.choixMenu .menuImg{
-  width: 194px;
-  height: 205.64px;
-}
-
-.choixMenu .choix{
-  width: 56px;
-  height: 56px;
-}
-
-
 
 #lastSection{
+  background-color: #D9D9D9;
   padding: 50px;
 }
 
 #section{
-  height: 183px;
+  height: fit-content;
+  background-color: #576D8B;
   max-width: 1253px;
   margin: 0 auto;
   border-radius: 7px;
@@ -195,26 +132,6 @@ a{
   height: 89px;
   margin: 50px auto;
 }
-
-.radioButton{
-  margin-right: 20px;
-  width: 56px;
-  height: 56px;
-  color: #576D8B;
-}
-
-.radioButton:hover{
-  cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -246,7 +163,6 @@ footer{
 
 #footer2{
   height: 100%;
-  
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -254,7 +170,6 @@ footer{
 
 #footer3{
   height: 100%;
-  
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -262,7 +177,6 @@ footer{
 
 #footer4{
   height: 100%;
-  
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -270,7 +184,6 @@ footer{
 
 #footer5{
   height: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -380,55 +293,19 @@ button:hover{
  filter: brightness(80%);
 }
 
-
 @media (max-width: 800px) {
-
-  #sectionCommande{
+  main{
     width: 100%;
-    text-align: center;
-    height: fit-content;
   }
-  #nosBurgers{
-    text-align: center;
-    width: 80%;
-    margin: 10px auto;
-    height: fit-content;
-  }
-  #nosBurgers2{
-    display: none;
+  .clickAndCollect{
+    width: 100%;
+    margin: 0 auto;
   }
 
-  .line{
-    width: auto;
-    margin: 5px auto;
-  }
 
   #commencerButton{
     width: 50%;
   }
+}
 
-  .burgers-list{
-    width: 100%;
-    text-align: center;
-  }
-
-  .choixMenu{
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: fit-content;
-  }
-  .choixMenu h2, p{
-    width: 100%;
-    margin: 10px auto;
-    text-align: center;
-  }
-  .menuImg{
-    margin: 0;
-  }
-  .choixMenu img{
-    margin: 0;
-  }
 }

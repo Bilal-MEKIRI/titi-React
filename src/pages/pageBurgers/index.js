@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./pageBurgers.css";
+import "./pageBurgers.scss";
 // URL API
 import { URL } from "../../utils/composants/urls.js";
 
@@ -21,7 +21,7 @@ function Burger() {
   }, []);
 
   return (
-    <main>
+    <main className="page-burgers">
       <h1>Nos burgers</h1>
       <div id="burgers-container">
         {burgers.map((element, index) => {

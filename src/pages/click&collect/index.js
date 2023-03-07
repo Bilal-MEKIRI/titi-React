@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./click&collect.css";
+import "./click&collect.scss";
 
 function Collect() {
   return (
-    <main>
+    <main className="clickAndcollect">
       <section class="clickAndCollect">
         <h1>Click & Collect</h1>
         <img id="imgLigne" src="images\Line 11.png" alt="ligne verticale" />

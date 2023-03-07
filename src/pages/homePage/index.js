@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./homepage.css";
+import "./homepage.scss";
 
 function Home() {
   return (
-    <main>
+    <main className="home">
       <section id="section1" class="section">
         <div id="restoImg">
           <h1>Le resto</h1>

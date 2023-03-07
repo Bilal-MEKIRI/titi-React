@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./paiment.css";
+import "./paiment.scss";
 
 function Paiment() {
   return (
-    <main>
+    <main className="paiment">
       <section id="sectionCommande">
         <div id="numeroCommande">Commande TITI03FTP092201</div>
         <div id="clickAndCollect">

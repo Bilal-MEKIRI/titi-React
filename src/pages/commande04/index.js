@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./commande4.css";
+import "./commande4.scss";
 
 function Commande4() {
   return (
-    <main>
+    <main className="commande4">
       <section id="sectionCommande">
         <div id="nosBoissons1">
           <h1>Nos Boissons</h1>

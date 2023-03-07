@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./confirmation.css";
+import "./confirmation.scss";
 
 function Confirmation() {
   return (
-    <main>
+    <main className="confirmation">
       <section id="sectionCommande">
         <div id="numeroCommande">Commande TITI03FTP092201</div>
         <div id="clickAndCollect">

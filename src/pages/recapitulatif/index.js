@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./recapitulatif.css";
+import "./recapitulatif.scss";
 
 function Recapitulatif() {
   return (
-    <main>
+    <main className="recapitulatif">
       <section id="sectionCommande">
         <div id="nosBurgers">
           <h1>Récapitulatif</h1>

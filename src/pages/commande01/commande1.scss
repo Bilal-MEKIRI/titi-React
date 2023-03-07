@@ -1,4 +1,5 @@
-
+.commande1{
+  
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -44,8 +45,8 @@ table {
 }
 
 
+
 header{
-    background-image: none;
   height: 200px;
   display: flex;
   justify-content: space-between;
@@ -55,7 +56,6 @@ header{
 #logo{
   margin: 50px;
 }
-
 #logoImg{
   width: 141px;
   height: 95px;
@@ -84,46 +84,41 @@ nav{
 
 
 #sectionCommande{
+  height: 300px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 50px auto;
-  margin-bottom: 0;
+  margin: 0 auto;
   max-width: 1253px;
 }
 
-#numeroCommande{
-  background-color: #D9D9D9;
-  color: #494C4F;
-  font-size: 2.3rem;
-  font-weight: bold;
+#nosBurgers{
+  width: 40%;
+  height: 300px;
+}
+#nosBurgers2{
+  height: 300px;
+  width: 50%;
 }
 
-
-#clickAndCollect img{
+#clickAndCollect1{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+#clickAndCollect1 img{
   width: 341px;
   height: 90px;
 }
 
-#line{
-  width: 1253px;
-  height: 3px;
-  margin: 10px 100px;
-}
-.section div{
+
+#clickAndCollect2{
+  width: 100%;
+  height: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.modePaiment{
-  width: 90px;
-  height: 90px;
-  margin-right: 20px;
-  border: 2px solid gray;
-}
-
-
 #images{
   display: flex;
   justify-content: start;
@@ -134,93 +129,72 @@ a{
   color: #5F6368;
 }
 
-
-
-#sectionPaiment{
-  display: flex;
-  justify-content: space-between;
-  width: 1253px;
-  margin: 0 auto;
-}
-#modePaiment{
-  width: 50%;
-}
-#promotion{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#promotion p{
-  color: #494C4F;
+#nosBurgers h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
   font-weight: bold;
-  width: 372px;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-#codePromo{
-  width: 511px;
-  height: 30%;
-  border: 2px solid red;
+  color: #102940;
+  margin-bottom: 20px;
 }
 
 
 .line{
-  width: 617px;
+  width: 1253px;
   height: 3px;
-  margin: 30px 10px;
+  margin: 0 100px;
 }
 
-.choixModePaiment{
+.choixMenu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1253px;
   margin: 35px auto;
 }
 
-.choixModePaiment h2{
+.choixMenu p{
+  width: 479px;
+}
+.choixMenu h2{
   width: 249px;
   color: black;
 }
-.choixModePaiment div{
+.choixMenu div{
   display: flex;
   align-items: center;
 }
-.choixModePaiment img{
+.choixMenu img{
   margin-right: 20px;
+  border-radius: 7px;
 }
-.choixModePaiment .menuImg{
+.choixMenu .menuImg{
   width: 194px;
   height: 205.64px;
 }
 
-.choixModePaiment .choix{
+.choixMenu .choix{
   width: 56px;
   height: 56px;
-}
-
-.section{
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
 }
 
 
 
 #lastSection{
-  max-width: 1253px;
-  margin: 0 auto;
-  background-color: white;
+  padding: 50px;
 }
 
 #section{
+  height: 183px;
+  max-width: 1253px;
+  margin: 0 auto;
   border-radius: 7px;
-  text-align: left;
-  background-color: white;
+  text-align: center;
 }
 
 #commencerButton{
   width: 456px;
   height: 89px;
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 .radioButton{
@@ -233,6 +207,7 @@ a{
 .radioButton:hover{
   cursor: pointer;
 }
+
 
 
 
@@ -345,6 +320,7 @@ h1{
 h2, p{
   font-size: 1.7rem;
   font-weight: 500;
+  margin-bottom: 30px;
   color: #494C4F;
 }
 p{
@@ -407,59 +383,55 @@ button:hover{
 
 
 @media (max-width: 800px) {
+
   #sectionCommande{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
+    height: fit-content;
   }
-  #numeroCommande{
-    order: 2;
-    margin: 10px;
+  #nosBurgers{
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+    height: fit-content;
   }
-  #clickAndCollect{
-    order: 1;
-    margin: 10px;
-    margin-bottom: 30px;
+  #nosBurgers2{
+    display: none;
   }
 
-  #line{
+  .line{
     width: auto;
     margin: 5px auto;
   }
 
-  #sectionPaiment{
+  #commencerButton{
+    width: 50%;
+  }
+
+  .burgers-list{
     width: 100%;
+    text-align: center;
+  }
+
+  .choixMenu{
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  #modePaiment{
-    margin-top: 30px;
-    width: 90%;
-  }
-  #promotion{
-    width: 90%;
-  }
-  #codePromo{
-    height: 150px;
-    width: 100%;
-  }
-  #codePromo{
-    height: 150px;
-  }
-  #lastSection{
-    width: fit-content;
-    margin: 0 auto;
-  }
-  #section{
-    width: fit-content;
-    margin: 0 auto;
-    text-align: center;
+    justify-content: space-between;
     height: fit-content;
   }
-  #commencerButton{
-    margin: 60px auto;
+  .choixMenu h2, p{
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
   }
+  .menuImg{
+    margin: 0;
+  }
+  .choixMenu img{
+    margin: 0;
+  }
+}
+
 }
