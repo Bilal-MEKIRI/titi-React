@@ -9,6 +9,7 @@ import Commande3 from "./pages/commande03";
 import Commande4 from "./pages/commande04";
 import Home from "./pages/homePage";
 import Burger from "./pages/pageBurgers";
+import Paiment from "./pages/paiment";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
         {/* <Route index element={<Commande1 />}></Route> */}
         {/* <Route index element={<Commande2 />}></Route> */}
         {/* <Route index element={<Commande3 />}></Route> */}
-        <Route index element={<Commande4 />}></Route>
+        {/* <Route index element={<Commande4 />}></Route> */}
+        <Route index element={<Paiment />}></Route>
       </Route>
     </Routes>
   );
