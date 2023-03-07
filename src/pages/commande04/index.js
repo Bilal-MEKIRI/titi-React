@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import "./commande4.scss";
 
+// URL API
+import { URL } from "../../utils/composants/urls";
+
 function Commande4() {
+  const [drinks, setDrinks] = useState([]);
+  useEffect(() => {
+    const fetchDrinks = async () => {
+      try {
+        const { data } = await axios.get(URL.fetchDrinks);
+        setDrinks(data);
+        console.log(data);
+      } catch (error) {
+        console.log(error.message());
+      }
+    };
+    fetchDrinks();
+  }, []);
+
   return (
     <main className="commande4">
       <section id="sectionCommande">
@@ -34,9 +52,53 @@ function Commande4() {
           </div>
         </div>
       </section>
-      <section class="choixMenu drinks-list-1"></section>
-      <img class="line displayline" src="images\\Line 5.png" alt="" />
-      <section class="choixMenu drinks-list-2"></section>
+      <section class="choixMenu drinks-list-1">
+        {drinks.map((element, index) => {
+          return (
+            <React.Fragment key={index}>
+              <section className="choixMenu">
+                <div>
+                  <input
+                    className="radioButton"
+                    type="radio"
+                    name="choixMenu"
+                  />
+                  <img className="menuImg" src={element.image} alt="" />
+                </div>
+                <h2>
+                  {element.name} - {element.price.$numberDecimal}$
+                </h2>
+                <p>{element.description}</p>
+              </section>
+              <img className="line" src="img\Line 5.png" alt="" />
+            </React.Fragment>
+          );
+        })}
+      </section>
+      <img class="line displayline" src="images\Line 5.png" alt="" />
+      <section class="choixMenu drinks-list-2">
+        {drinks.map((element, index) => {
+          return (
+            <React.Fragment key={index}>
+              <section className="choixMenu">
+                <div>
+                  <input
+                    className="radioButton"
+                    type="radio"
+                    name="choixMenu"
+                  />
+                  <img className="menuImg" src={element.image} alt="" />
+                </div>
+                <h2>
+                  {element.name} - {element.price.$numberDecimal}$
+                </h2>
+                <p>{element.description}</p>
+              </section>
+              <img className="line" src="img\Line 5.png" alt="" />
+            </React.Fragment>
+          );
+        })}
+      </section>
       <div id="lastSection">
         <section id="section">
           <Link to="/recapitulatif">

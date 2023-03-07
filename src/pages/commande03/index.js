@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import "./commande3.scss";
 
+// URL API
+import { URL } from "../../utils/composants/urls";
+
 function Commande3() {
+  const [desert, setDesert] = useState([]);
+  useEffect(() => {
+    const fetchDeserts = async () => {
+      try {
+        const { data } = await axios.get(URL.fetchDeserts);
+        setDesert(data);
+        console.log(data);
+      } catch (error) {
+        console.log(error.message());
+      }
+    };
+    fetchDeserts();
+  }, []);
+
   return (
     <main className="commande3">
       <section id="sectionCommande">
@@ -35,7 +53,29 @@ function Commande3() {
         </div>
       </section>
       <img class="line" src="images\Line 5.png" alt="" />
-      <section class="deserts-list"></section>
+      <section class="deserts-list">
+        {desert.map((element, index) => {
+          return (
+            <React.Fragment key={index}>
+              <section className="choixMenu">
+                <div>
+                  <input
+                    className="radioButton"
+                    type="radio"
+                    name="choixMenu"
+                  />
+                  <img className="menuImg" src={element.image} alt="" />
+                </div>
+                <h2>
+                  {element.name} - {element.price.$numberDecimal}$
+                </h2>
+                <p>{element.description}</p>
+              </section>
+              <img className="line" src="img\Line 5.png" alt="" />
+            </React.Fragment>
+          );
+        })}
+      </section>
       <div id="lastSection">
         <section id="section">
           <Link to="/commande4">

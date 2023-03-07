@@ -27,12 +27,28 @@ function Burger() {
         {burgers.map((element, index) => {
           return (
             <React.Fragment key={index}>
-              <div className="burgers">
+              {/* <div className="burgers">
                 <p id="burger-name">{element.name}</p>
-                <img src={element.image} />
+                <img src={element.image} alt="" />
                 <p>{element.description}</p>
                 <p>{element.price.$numberDecimal}$</p>
-              </div>
+              </div> */}
+
+              <section className="choixMenu">
+                <div>
+                  <input
+                    className="radioButton"
+                    type="radio"
+                    name="choixMenu"
+                  />
+                  <img className="menuImg" src={element.image} alt="" />
+                </div>
+                <h2>
+                  {element.name} - {element.price.$numberDecimal}$
+                </h2>
+                <p>{element.description}</p>
+              </section>
+              <img className="line" src="img\Line 5.png" alt="" />
             </React.Fragment>
           );
         })}
