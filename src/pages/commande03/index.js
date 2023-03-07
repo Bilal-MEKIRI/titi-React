@@ -38,9 +38,9 @@ function Commande3() {
       <section class="deserts-list"></section>
       <div id="lastSection">
         <section id="section">
-          <a href="recapitulatif.html">
+          <Link to="/commande4">
             <button id="commencerButton">Suivant</button>
-          </a>
+          </Link>
         </section>
       </div>
     </main>

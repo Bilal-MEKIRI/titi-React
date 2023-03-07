@@ -67,7 +67,7 @@ function Paiment2() {
       </div>
       <div id="lastSection">
         <section id="section">
-          <Link href="confirmation.html">
+          <Link to="/confirmation">
             <button id="commencerButton">Payer</button>
           </Link>
         </section>

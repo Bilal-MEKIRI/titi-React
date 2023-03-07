@@ -18,9 +18,9 @@ function Collect() {
       </section>
       <div id="lastSection">
         <section id="section">
-          <a href="commande1.html">
+          <Link to="/commande1">
             <button id="commencerButton">Commencer</button>
-          </a>
+          </Link>
         </section>
       </div>
     </main>

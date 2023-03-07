@@ -39,7 +39,7 @@ function Commande4() {
       <section class="choixMenu drinks-list-2"></section>
       <div id="lastSection">
         <section id="section">
-          <Link href="commande3.html">
+          <Link to="/recapitulatif">
             <button id="commencerButton">Suivant</button>
           </Link>
         </section>

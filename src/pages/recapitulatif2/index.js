@@ -83,7 +83,7 @@ function Recapitulatif2() {
             <div id="numeroCommande">Commande TITI03FTP092201</div>
             <p>15€</p>
           </div>
-          <Link href="paiment.html">
+          <Link to="/paiment">
             <button id="paimentButton">Payer</button>
           </Link>
         </section>

@@ -1,6 +1,7 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
-import "./template.css";
+import { Outlet } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
+import "./template.scss";
 
 function Template() {
   return (
@@ -16,25 +17,25 @@ function Template() {
         <div id="navigation">
           <div class="desktop-nav-bar">
             <div id="button">
-              <Link to="">
+              <Link to="collect">
                 <button>Click & Collect</button>
               </Link>
-              <Link href="commande1.html">
+              <Link to="commande1">
                 <button>Livraison</button>
               </Link>
             </div>
             <nav>
               <ol>
-                <Link class="navItems" href="commande1.html">
+                <Link class="navItems" to="/commande1">
                   <li>La carte</li>
                 </Link>
-                <Link class="navItems" href="index.html#section1">
+                <Link class="navItems" smooth to="#section1">
                   <li>Titi story</li>
                 </Link>
-                <Link class="navItems" href="index.html#section1">
+                <Link class="navItems" smooth to="#section1">
                   <li>Le resto</li>
                 </Link>
-                <Link class="navItems" href="index.html#section3Title">
+                <Link class="navItems" smooth to="#section3Title">
                   <li>Actus</li>
                 </Link>
               </ol>

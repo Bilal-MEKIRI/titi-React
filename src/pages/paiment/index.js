@@ -55,7 +55,7 @@ function Paiment() {
       </div>
       <div id="lastSection">
         <section id="section">
-          <Link href="paiment2.html">
+          <Link to="/paiment2">
             <button id="commencerButton">Valider</button>
           </Link>
         </section>

@@ -71,7 +71,7 @@ function Recapitulatif() {
       <div id="lastSection">
         <section id="section">
           <div id="prixCommande">15€</div>
-          <Link href="recapitulatif2.html">
+          <Link to="/recapitulatif2">
             <button id="paimentButton">Payer</button>
           </Link>
         </section>

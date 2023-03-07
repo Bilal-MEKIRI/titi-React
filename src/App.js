@@ -23,16 +23,16 @@ function App() {
         {/* <Route index element={<Burger />}></Route> */}
         {/* <Route index element={<Slide />}></Route> */}
         <Route index element={<Home />}></Route>
-        {/* <Route index element={<Collect />}></Route> */}
-        {/* <Route index element={<Commande1 />}></Route> */}
-        {/* <Route index element={<Commande2 />}></Route> */}
-        {/* <Route index element={<Commande3 />}></Route> */}
-        {/* <Route index element={<Commande4 />}></Route> */}
-        {/* <Route index element={<Paiment />}></Route> */}
-        {/* <Route index element={<Paiment2 />}></Route> */}
-        {/* <Route index element={<Recapitulatif />}></Route> */}
-        {/* <Route index element={<Recapitulatif2 />}></Route> */}
-        {/* <Route index element={<Confirmation />}></Route> */}
+        <Route path="/collect" element={<Collect />}></Route>
+        <Route path="/commande1" element={<Commande1 />}></Route>
+        <Route path="/commande2" element={<Commande2 />}></Route>
+        <Route path="/commande3" element={<Commande3 />}></Route>
+        <Route path="/commande4" element={<Commande4 />}></Route>
+        <Route path="/paiment" element={<Paiment />}></Route>
+        <Route path="/paiment2" element={<Paiment2 />}></Route>
+        <Route path="/recapitulatif" element={<Recapitulatif />}></Route>
+        <Route path="/recapitulatif2" element={<Recapitulatif2 />}></Route>
+        <Route path="/confirmation" element={<Confirmation />}></Route>
       </Route>
     </Routes>
   );

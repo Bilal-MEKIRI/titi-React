@@ -38,7 +38,7 @@ function Commande2() {
       <section class="side-dishes-list"></section>
       <div id="lastSection">
         <section id="section">
-          <Link href="commande4.html">
+          <Link to="/commande3">
             <button id="commencerButton">Suivant</button>
           </Link>
         </section>
