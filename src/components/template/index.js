@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import "./style.css";
+import "./template.css";
 
 function Template() {
   return (
@@ -16,12 +16,12 @@ function Template() {
         <div id="navigation">
           <div class="desktop-nav-bar">
             <div id="button">
-              <a href="click&collect.html">
+              <Link to="">
                 <button>Click & Collect</button>
-              </a>
-              <a href="commande1.html">
+              </Link>
+              <Link href="commande1.html">
                 <button>Livraison</button>
-              </a>
+              </Link>
             </div>
             <nav>
               <ol>
