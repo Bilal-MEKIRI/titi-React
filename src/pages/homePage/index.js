@@ -1,6 +1,8 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./homepage.scss";
+import Slide from "../../components/slide";
 
 function Home() {
   return (
@@ -35,42 +37,7 @@ function Home() {
           </p>
         </div>
         <div id="menu">
-          <img
-            class="fleche"
-            id="flecheDroite"
-            src="images\flecheGauche.png"
-            alt="fleche gauche"
-          />
-          <div class="menu">
-            <img class="menuImg" src="images\burger1.jpg" alt="" />
-            <p>Burger n°1</p>
-          </div>
-          <div class="menu">
-            <img class="menuImg" src="images\burger2.jpg" alt="" />
-            <p>Burger n°2</p>
-          </div>
-          <div class="menu">
-            <img class="menuImg" src="images\burger3.jpg" alt="" />
-            <p>Burger n°3</p>
-          </div>
-          <div class="menu">
-            <img class="menuImg" src="images\burger4.jpg" alt="" />
-            <p>Burger n°4</p>
-          </div>
-          <div class="menu">
-            <img class="menuImg" src="images\burger5.jpg" alt="" />
-            <p>Burger n°5</p>
-          </div>
-          <div class="menu">
-            <img class="menuImg" src="images\burger6.jpg" alt="" />
-            <p>Burger n°6</p>
-          </div>
-          <img
-            class="fleche"
-            id="flecheGauche"
-            src="images\flecheDroite.png"
-            alt="fleche droite"
-          />
+          <Slide />
         </div>
       </section>
       <div id="section3Title">

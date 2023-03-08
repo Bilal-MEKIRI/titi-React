@@ -10,7 +10,6 @@ import Commande3 from "./pages/commande03";
 import Commande4 from "./pages/commande04";
 import Confirmation from "./pages/confirmation";
 import Home from "./pages/homePage";
-import Burger from "./pages/pageBurgers";
 import Paiment from "./pages/paiment";
 import Paiment2 from "./pages/paiment2";
 import Recapitulatif from "./pages/recapitulatif";
@@ -20,8 +19,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Template />}>
-        {/* <Route index element={<Burger />}></Route> */}
-        {/* <Route index element={<Slide />}></Route> */}
+        {/* <Route path="/slide" element={<Slide />}></Route> */}
         <Route index element={<Home />}></Route>
         <Route path="/collect" element={<Collect />}></Route>
         <Route path="/commande1" element={<Commande1 />}></Route>

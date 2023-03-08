@@ -4,7 +4,17 @@ header{
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+
+  &.header-home{
+    height: 600px;
+    background-image: url(../../../public/images/header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+  }
 }
+
+
 
 #logo{
   margin: 50px;

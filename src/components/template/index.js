@@ -1,13 +1,19 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import "../resetCSS/reset.scss";
 import "./template.scss";
 
-function Template() {
+export default function Template() {
+  const location = useLocation();
+
+  function getPath() {
+    return location.pathname;
+  }
+
   return (
     <>
-      <header>
+      <header className={getPath() === "/" ? "header-home" : ""}>
         <div id="logo">
           <img
             id="logoImg"
@@ -116,4 +122,3 @@ function Template() {
     </>
   );
 }
-export default Template;

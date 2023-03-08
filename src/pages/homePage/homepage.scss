@@ -1,17 +1,16 @@
 .home {
-  
-  
-  header{
-    height: 600px;
-    background-image: url(../../../public/images/header.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-  
-  
+
+header{
+  height: 600px;
+  background-image: url(../../../public/images/header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+
   .section{
     height: 400px;
     display: flex;
