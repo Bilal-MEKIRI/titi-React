@@ -92,10 +92,18 @@
     height: 100%;
     width: 500px;
   }
+  #link{
+    color: #979797;
+    transition: 0.2s;
+  }
+  #link:hover{
+    color: #979797;
+    font-size: 1.08rem;
+  }
   
   #menu{
     height: 100%;
-    width: 900px;
+    width: fit-content;
     display: flex;
     margin-left: 60px;
     align-items: center;

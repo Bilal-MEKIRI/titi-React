@@ -14,9 +14,9 @@ function Slide() {
     slidesPerRow: 1,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 750,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: true,

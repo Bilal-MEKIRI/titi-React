@@ -19,7 +19,6 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Template />}>
-        {/* <Route path="/slide" element={<Slide />}></Route> */}
         <Route index element={<Home />}></Route>
         <Route path="/collect" element={<Collect />}></Route>
         <Route path="/commande1" element={<Commande1 />}></Route>

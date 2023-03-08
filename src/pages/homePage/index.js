@@ -24,7 +24,9 @@ function Home() {
             velit nemo nam facere totam suscipit. Quibusdam, facere quam!
             Tenetur, expedita sequi.
           </p>
-          <Link href="#">Lire la suite</Link>
+          <Link id="link" href="#">
+            Lire la suite
+          </Link>
         </div>
       </section>
       <section id="section2" class="section">
