@@ -44,7 +44,7 @@ function Recapitulatif2() {
       <section class="choixMenu">
         <div>
           <input class="radioButton" type="radio" name="" checked="true" />
-          <img class="menuImg" src="images\frites.png" alt="" />
+          <img class="menuImg" src="images\frites-sel.jpg" alt="" />
         </div>
         <h2>Frites</h2>
         <div>
@@ -56,7 +56,7 @@ function Recapitulatif2() {
       <section class="choixMenu">
         <div>
           <input class="radioButton" type="radio" name="" checked="true" />
-          <img class="menuImg" src="images\Gauffres.jpg" alt="" />
+          <img class="menuImg" src="images\gaufres.jpg" alt="" />
         </div>
         <h2>Gauffres</h2>
         <div>
@@ -68,7 +68,7 @@ function Recapitulatif2() {
       <section class="choixMenu">
         <div>
           <input class="radioButton" type="radio" name="" checked="true" />
-          <img class="menuImg" src="images\eau.jpeg" alt="" />
+          <img class="menuImg" src="images\cristalline.jpeg" alt="" />
         </div>
         <h2>Eau</h2>
         <div>

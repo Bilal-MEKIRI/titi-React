@@ -138,9 +138,9 @@ a{
 
 
 .line{
-  width: 617px;
+  width: 1253px;
   height: 3px;
-  margin: 30px 10px;
+  margin: 0 100px;
 }
 
 .choixMenu{
@@ -209,6 +209,13 @@ a{
 }
 .radioButton:hover{
   cursor: pointer;
+}
+
+.drinks-list-1{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 

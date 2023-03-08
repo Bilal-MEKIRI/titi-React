@@ -21,7 +21,9 @@ function Paiment2() {
               name="choixMenu"
               checked="true"
             />
-            <h2>Visa</h2>
+            <div className="modePaiment">
+              <img src="images\visa.png" alt=""></img>
+            </div>
           </div>
           <form action="">
             <div class="inputBox">

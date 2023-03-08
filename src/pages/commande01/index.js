@@ -72,7 +72,7 @@ function Commande1() {
                 </h2>
                 <p>{element.description}</p>
               </section>
-              <img className="line" src="img\Line 5.png" alt="" />
+              <img className="line" src="images\Line 5.png" alt="" />
             </React.Fragment>
           );
         })}
