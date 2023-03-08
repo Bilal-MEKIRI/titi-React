@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
+import "../resetCSS/reset.scss";
 import "./template.scss";
 
 function Template() {
@@ -29,13 +30,13 @@ function Template() {
                 <Link class="navItems" to="/commande1">
                   <li>La carte</li>
                 </Link>
-                <Link class="navItems" smooth to="#section1">
+                <Link class="navItems" smooth to="/#section1">
                   <li>Titi story</li>
                 </Link>
-                <Link class="navItems" smooth to="#section1">
+                <Link class="navItems" smooth to="/#section1">
                   <li>Le resto</li>
                 </Link>
-                <Link class="navItems" smooth to="#section3Title">
+                <Link class="navItems" smooth to="/#section3Title">
                   <li>Actus</li>
                 </Link>
               </ol>
