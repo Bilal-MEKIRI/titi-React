@@ -15,11 +15,10 @@ export default function Template() {
     <>
       <header className={getPath() === "/" ? "header-home" : ""}>
         <div id="logo">
-          <img
+          <div
+            className={getPath() === "/" ? "home-page-logo" : "logo"}
             id="logoImg"
-            src="images/Logo-titi-Burger noir.png"
-            alt="Titi burger logo"
-          />
+          ></div>
         </div>
         <div id="navigation">
           <div class="desktop-nav-bar">
@@ -33,16 +32,35 @@ export default function Template() {
             </div>
             <nav>
               <ol>
-                <Link class="navItems" to="/commande1">
+                <Link
+                  class="navItems"
+                  to="/commande1"
+                  id={getPath() === "/" ? "home-page-nav" : ""}
+                >
                   <li>La carte</li>
                 </Link>
-                <Link class="navItems" smooth to="/#section1">
+                <Link
+                  class="navItems"
+                  smooth
+                  to="/#section1"
+                  id={getPath() === "/" ? "home-page-nav" : ""}
+                >
                   <li>Titi story</li>
                 </Link>
-                <Link class="navItems" smooth to="/#section1">
+                <Link
+                  class="navItems"
+                  smooth
+                  to="/#section1"
+                  id={getPath() === "/" ? "home-page-nav" : ""}
+                >
                   <li>Le resto</li>
                 </Link>
-                <Link class="navItems" smooth to="/#section3Title">
+                <Link
+                  class="navItems"
+                  smooth
+                  to="/#section3Title"
+                  id={getPath() === "/" ? "home-page-nav" : ""}
+                >
                   <li>Actus</li>
                 </Link>
               </ol>

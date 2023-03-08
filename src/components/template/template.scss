@@ -14,7 +14,20 @@ header{
   }
 }
 
-
+.logo{
+  background-image: url(../../../public/images/Logo-titi-Burger_noir.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  
+}
+.home-page-logo{
+  background-image: url(../../../public/images/Logo-titi-Burger_Blanc.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  }
 
 #logo{
   margin: 50px;
@@ -186,7 +199,14 @@ h3{
   color: black;
   text-decoration: none;
 }
-
+#home-page-nav{
+    color: white;
+  }
+  #home-page-nav:hover{
+    font-size: 1.1rem;
+  color: rgb(239, 224, 58);
+  transform: scale(1.05);
+  }
 .navItems:hover{
   font-size: 1.1rem;
   color: rgb(239, 224, 58);
