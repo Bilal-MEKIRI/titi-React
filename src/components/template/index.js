@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import { FaBars, Fabars, FaTimes } from "react-icons/fa";
 import { Outlet, useLocation } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import "../resetCSS/reset.scss";
@@ -6,6 +7,13 @@ import "./template.scss";
 
 export default function Template() {
   const location = useLocation();
+  const navRef = useRef();
+  const burgerBtn = useRef();
+
+  function showNavbar() {
+    navRef.current.classList.toggle("responsive-nav");
+    burgerBtn.current.classList.toggle("hide");
+  }
 
   function getPath() {
     return location.pathname;
@@ -21,7 +29,7 @@ export default function Template() {
           ></div>
         </div>
         <div id="navigation">
-          <div class="desktop-nav-bar">
+          <div class="desktop-nav-bar" ref={navRef}>
             <div id="button">
               <Link to="collect">
                 <button>Click & Collect</button>
@@ -32,6 +40,20 @@ export default function Template() {
             </div>
             <nav>
               <ol>
+                <Link
+                  to="collect"
+                  className="hide-link navItems"
+                  id={getPath() === "/" ? "home-page-nav" : ""}
+                >
+                  Click & Collect
+                </Link>
+                <Link
+                  to="commande1"
+                  className="hide-link navItems"
+                  id={getPath() === "/" ? "home-page-nav" : ""}
+                >
+                  Livraison
+                </Link>
                 <Link
                   class="navItems"
                   to="/commande1"
@@ -65,7 +87,17 @@ export default function Template() {
                 </Link>
               </ol>
             </nav>
+            <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+              <FaTimes />
+            </button>
           </div>
+          <button
+            className="nav-btn nav-open-btn"
+            onClick={showNavbar}
+            ref={burgerBtn}
+          >
+            <FaBars />
+          </button>
         </div>
       </header>
       <section>

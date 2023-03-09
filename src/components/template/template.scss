@@ -1,6 +1,6 @@
 
 header{
-  height: 200px;
+  height: 300px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -55,6 +55,28 @@ nav{
   width: 100%;
   height: 50%;
   font-family: 'Roboto', sans-serif;
+}
+
+.nav-btn{
+  width: fit-content !important;
+  height: fit-content !important;
+  padding: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+.nav-btn .burger-btn-home{
+  color: white !important;
+}
+
+.hide-link{
+  visibility: hidden;
 }
 
 
@@ -232,30 +254,101 @@ button:hover{
 }
 
 
-@media (max-width: 800px) {
-  #sectionCommande{
+
+
+
+
+
+@media (max-width: 900px) {
+
+  .hide{
+    display: none;
+  }
+
+  #button{
+    visibility: hidden;
+  }
+
+  .nav-btn{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .desktop-nav-bar{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9ADD6;
+    transition: all 0.7s;
+    transform: translateY(-200vh);
+  }
+
+  .responsive-nav{
+    transform: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+  .nav-close-btn, .nav-open-btn{
+    position: absolute;
+    top: 2rem;
+    right: 0;
+  }
+
+  nav{
+    height: fit-content !important;
+    width: fit-content !important;
+  }
+  ol{
+    width: fit-content !important;
+    height: fit-content !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+  }
+
+  nav a{
+    font-size: 4rem;
+    margin: 10px;
+  }
+
+  .hide-link{
+    visibility: visible;
+  }
+
+
+
+
+
+
+
+  footer{
+    height: fit-content;
+    width: 100%;
+  }
+  #sectionFooter{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    color: #ff00ee;
+    text-align: left;
   }
-  #numeroCommande{
-    order: 2;
-    margin: 10px;
+  #footer5{
+    display: flex;
+    flex-direction: row;
   }
-  #clickAndCollect{
-    order: 1;
-    margin: 10px;
-    margin-bottom: 30px;
+  #footer1, #footer2, #footer3, #footer4, #footer5{
+    width: 100%;
+    padding: 20px;
   }
 
-  #line{
-    width: auto;
-    margin: 5px auto;
-  }
-  
-  #sectionPaiment{
-    width: 90%;
+  .footerLink{
+    margin: 10px;
   }
 }
