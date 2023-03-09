@@ -60,7 +60,7 @@ function Home() {
             Repudiandae corporis vitae repellat quod temporibus ad harum iste
             vero voluptate, velit voluptates obcaecati.
           </p>
-          <button class="articleButton">En savoir +</button>
+          <button className="articleButton">En savoir +</button>
         </article>
         <article id="article2" class="article">
           <h3>Des coktails sur mesure</h3>
@@ -70,7 +70,7 @@ function Home() {
             Repudiandae corporis vitae repellat quod temporibus ad harum iste
             vero voluptate, velit voluptates obcaecati.
           </p>
-          <button class="articleButton">En savoir +</button>
+          <button className="articleButton">En savoir +</button>
         </article>
         <article id="article3" class="article">
           <h3>Une ambiance authentique</h3>
@@ -80,7 +80,7 @@ function Home() {
             Repudiandae corporis vitae repellat quod temporibus ad harum iste
             vero voluptate, velit voluptates obcaecati.
           </p>
-          <button class="articleButton">En savoir +</button>
+          <button className="articleButton">En savoir +</button>
         </article>
       </section>
       <div id="lastSection">

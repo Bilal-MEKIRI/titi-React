@@ -30,7 +30,7 @@ export default function Template() {
         </div>
         <div id="navigation">
           <div class="desktop-nav-bar" ref={navRef}>
-            <div id="button">
+            <div id="button" className="navbar-btn">
               <Link to="collect">
                 <button>Click & Collect</button>
               </Link>

@@ -118,18 +118,7 @@
     text-align: center;
   }
   
-  .fleche{
-    width: 13px;
-    height: 34px;
-  }
-  .fleche:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-    filter: brightness(70%);
-  }
-  #flecheDroite{
-    margin-right: 30px;
-  }
+ 
   
   article{
     height: 100%;
@@ -307,14 +296,18 @@
   }
   
   .articleButton{
-    width: 100px;
-    height: 50px;
+    width: 100px !important;
+    height: 50px !important;
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 40%;
     margin-right: 40%;
-    background-color: #494C4F;
-    color: white;
+    font-size: 1.1rem !important;
+    background-color: #494C4F !important;
+    color: white !important;
+  }
+  .articleButton:hover{
+    background-color: #898a8a !important;
   }
   
   
