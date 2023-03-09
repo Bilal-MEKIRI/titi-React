@@ -386,9 +386,11 @@ button:hover{
     align-items: center;
     text-align: center;
   }
- 
+  .description{
+    width: 90vw !important;
+  }
 
-  .choixMenu h2 {
+  .choixMenu h2, p {
     width: auto;
   }
 .radioButton{

@@ -70,7 +70,7 @@ function Commande4() {
                 <h2>
                   {element.name} - {element.price.$numberDecimal}$
                 </h2>
-                <p>{element.description}</p>
+                <p className="description">{element.description}</p>
               </section>
               <img className="line" src="/images\Line 5.png" alt="" />
             </React.Fragment>
