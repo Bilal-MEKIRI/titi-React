@@ -52,8 +52,8 @@ function Commande3() {
           </div>
         </div>
       </section>
-      <img class="line" src="images\Line 5.png" alt="" />
-      <section class="deserts-list">
+      <section className="deserts-list">
+        <img class="line" src="images\Line 5.png" alt="" />
         {desert.map((element, index) => {
           return (
             <React.Fragment key={index}>

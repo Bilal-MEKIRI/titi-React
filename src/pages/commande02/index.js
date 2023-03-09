@@ -52,8 +52,8 @@ function Commande2() {
           </div>
         </div>
       </section>
-      <img class="line" src="images\Line 5.png" alt="" />
-      <section class="side-dishes-list">
+      <section className="side-dishes-list">
+        <img class="line" src="images\Line 5.png" alt="" />
         {sideDishes.map((element, index) => {
           return (
             <React.Fragment key={index}>

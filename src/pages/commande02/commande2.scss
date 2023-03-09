@@ -338,6 +338,9 @@ button:hover{
 
 @media (max-width: 800px) {
 
+  .side-dishes-list{
+    text-align: center;
+  }
   #sectionCommande{
     width: 100%;
     text-align: center;
@@ -354,7 +357,7 @@ button:hover{
   }
 
   .line{
-    width: auto;
+    width: 90vw;
     margin: 5px auto;
   }
 

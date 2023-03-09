@@ -28,7 +28,7 @@ function Recapitulatif() {
           </div>
         </div>
       </section>
-      <img class="line" src="images\Line 5.png" alt="" />
+      <img className="line" src="images\Line 5.png" alt="" />
       <section class="choixMenu">
         <div>
           <input class="radioButton" type="radio" name="" checked="true" />
@@ -37,7 +37,7 @@ function Recapitulatif() {
         <h2>Le Dark Burger</h2>
         <p>5,5.€</p>
       </section>
-      <img class="line" src="images\Line 5.png" alt="" />
+      <img className="line" src="images\Line 5.png" alt="" />
       <section class="choixMenu">
         <div>
           <input class="radioButton" type="radio" name="" checked="true" />
@@ -47,7 +47,7 @@ function Recapitulatif() {
         <h2>Frites</h2>
         <p>3,50€</p>
       </section>
-      <img class="line" src="images\Line 5.png" alt="" />
+      <img className="line" src="images\Line 5.png" alt="" />
       <section class="choixMenu">
         <div>
           <input class="radioButton" type="radio" name="" checked="true" />
@@ -57,7 +57,7 @@ function Recapitulatif() {
         <h2>Gauffres</h2>
         <p>3,50€</p>
       </section>
-      <img class="line" src="images\Line 5.png" alt="" />
+      <img className="line" src="images\Line 5.png" alt="" />
       <section class="choixMenu">
         <div>
           <input class="radioButton" type="radio" name="" checked="true" />
@@ -67,7 +67,7 @@ function Recapitulatif() {
         <h2>Eau</h2>
         <p>1€</p>
       </section>
-      <img class="line" src="images\Line 5.png" alt="" />
+      <img className="line" src="images\Line 5.png" alt="" />
       <div id="lastSection">
         <section id="section">
           <div id="prixCommande">15€</div>

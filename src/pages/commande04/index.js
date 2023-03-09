@@ -52,7 +52,9 @@ function Commande4() {
           </div>
         </div>
       </section>
-      <section className="choixMenu drinks-list-1">
+
+      <section id="drinks" className="drinks-list-1">
+        <img className="line" src="/images\Line 5.png" alt="" />
         {drinks.map((element, index) => {
           return (
             <React.Fragment key={index}>
@@ -75,7 +77,6 @@ function Commande4() {
           );
         })}
       </section>
-      <img class="line displayline" src="/images\Line 5.png" alt="" />
 
       <div id="lastSection">
         <section id="section">
