@@ -3,11 +3,20 @@
 #scroll-to-top-btn{
     position: fixed !important;
     bottom: 50px !important;
-    right: 2px !important;
+    right: -35px !important;
     height: 45px !important;
     width: 45px !important;
     font-size: 45px !important;
     background-color: #ff9df8 !important;
     color: black !important;
     border-radius: 25%;
+}
+
+@media (max-width: 800px) {
+    #scroll-to-top-btn{
+        right: -55px !important;
+        height: 40px !important;
+        width: 40px !important;
+        font-size: 40px !important;
+    }
 }
