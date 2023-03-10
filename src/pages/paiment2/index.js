@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./paiment2.scss";
+import ScrollToTop from "../../components/scrollToTopBtn";
 
 function Paiment2() {
   return (
@@ -74,6 +75,7 @@ function Paiment2() {
           </Link>
         </section>
       </div>
+      <ScrollToTop />
     </main>
   );
 }

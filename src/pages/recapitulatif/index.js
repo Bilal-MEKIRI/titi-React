@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./recapitulatif.scss";
+import ScrollToTop from "../../components/scrollToTopBtn";
 
 function Recapitulatif() {
   return (
@@ -76,6 +77,7 @@ function Recapitulatif() {
           </Link>
         </section>
       </div>
+      <ScrollToTop />
     </main>
   );
 }

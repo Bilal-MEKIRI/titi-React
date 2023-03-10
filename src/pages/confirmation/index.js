@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./confirmation.scss";
+import ScrollToTop from "../../components/scrollToTopBtn";
 
 function Confirmation() {
   return (
@@ -17,6 +18,7 @@ function Confirmation() {
         <p id="p2">Vous pouvez venir la chercher à:</p>
         <p id="p3">12H45</p>
       </div>
+      <ScrollToTop />
     </main>
   );
 }

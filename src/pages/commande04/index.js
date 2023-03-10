@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./commande4.scss";
+import ScrollToTop from "../../components/scrollToTopBtn";
 
 // URL API
 import { URL } from "../../utils/composants/urls";
@@ -85,6 +86,7 @@ function Commande4() {
           </Link>
         </section>
       </div>
+      <ScrollToTop />
     </main>
   );
 }

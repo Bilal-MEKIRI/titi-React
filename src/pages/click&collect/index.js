@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./click&collect.scss";
+import ScrollToTop from "../../components/scrollToTopBtn";
 
 function Collect() {
   return (
@@ -23,6 +24,7 @@ function Collect() {
           </Link>
         </section>
       </div>
+      <ScrollToTop />
     </main>
   );
 }
