@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./commande3.scss";
 import ScrollToTop from "../../components/scrollToTopBtn";
 
@@ -9,6 +9,9 @@ import { URL } from "../../utils/composants/urls";
 
 function Commande3() {
   const [desert, setDesert] = useState([]);
+  const [choosedProduct, setChoosedProduct] = useState();
+  const navigate = useNavigate();
+
   useEffect(() => {
     const fetchDeserts = async () => {
       try {
@@ -21,6 +24,17 @@ function Commande3() {
     };
     fetchDeserts();
   }, []);
+
+  function handleChange(event) {
+    setChoosedProduct(event.target.value);
+  }
+
+  function next() {
+    if (choosedProduct !== undefined) {
+      localStorage.setItem("desert", choosedProduct);
+      navigate("/commande4");
+    }
+  }
 
   return (
     <main className="commande3">
@@ -64,6 +78,8 @@ function Commande3() {
                     className="radioButton"
                     type="radio"
                     name="choixMenu"
+                    value={element._id}
+                    onChange={handleChange}
                   />
                   <img className="menuImg" src={element.image} alt="" />
                 </div>
@@ -79,9 +95,9 @@ function Commande3() {
       </section>
       <div id="lastSection">
         <section id="section">
-          <Link to="/commande4">
-            <button id="commencerButton">Suivant</button>
-          </Link>
+          <button id="commencerButton" onClick={next}>
+            Suivant
+          </button>
         </section>
       </div>
       <ScrollToTop />
