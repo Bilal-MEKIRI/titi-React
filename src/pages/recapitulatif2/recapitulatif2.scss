@@ -107,12 +107,8 @@ a{
 }
 
 .choixMenu p{
-  width: 166px;
-  color: #5F6368;
-}
-.choixMenu p:hover{
-  cursor: pointer;
-  transform: scale(1.07);
+    width: 479px;
+    text-align: left;
 }
 .choixMenu h2{
   width: 249px;
@@ -360,6 +356,10 @@ button:hover{
 
 
 @media (max-width: 800px) {
+
+  .choixMenu p{
+    text-align: center;
+}
   #sectionCommande{
     width: 100%;
     height: fit-content;

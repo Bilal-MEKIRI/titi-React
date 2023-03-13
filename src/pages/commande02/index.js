@@ -30,10 +30,12 @@ function Commande2() {
   }
 
   function next() {
-    if (choosedProduct !== undefined) {
-      localStorage.setItem("sideDish", choosedProduct);
-      navigate("/commande3");
-    }
+    fetch("https://titi.startwin.fr/products/" + choosedProduct)
+      .then((res) => res.json())
+      .then(function (data) {
+        localStorage.setItem("sideDish", JSON.stringify(data));
+        navigate("/commande3");
+      });
   }
 
   return (

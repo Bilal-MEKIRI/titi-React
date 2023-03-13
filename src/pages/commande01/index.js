@@ -31,8 +31,12 @@ function Commande1() {
 
   function next() {
     if (choosedProduct !== undefined) {
-      localStorage.setItem("burger", choosedProduct);
-      navigate("/commande2");
+      fetch("https://titi.startwin.fr/products/" + choosedProduct)
+        .then((res) => res.json())
+        .then(function (data) {
+          localStorage.setItem("burger", JSON.stringify(data));
+          navigate("/commande2");
+        });
     }
   }
 

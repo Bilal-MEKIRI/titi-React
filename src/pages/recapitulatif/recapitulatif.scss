@@ -110,6 +110,7 @@ a{
 
 .choixMenu p{
   width: 479px;
+  text-align: left;
 }
 .choixMenu h2{
   width: 249px;
@@ -379,6 +380,9 @@ button:hover{
   .choixMenu h2, p{
     width: 100%;
     margin: 10px auto;
+    text-align: center;
+  }
+  .choixMenu p{
     text-align: center;
   }
   .menuImg{

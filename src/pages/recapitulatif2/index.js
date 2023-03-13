@@ -1,9 +1,28 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./recapitulatif2.scss";
 import ScrollToTop from "../../components/scrollToTopBtn";
 
 function Recapitulatif2() {
+  const [burger, setBurger] = useState();
+  const [sideDish, setSideDish] = useState();
+  const [desert, setDesert] = useState();
+  const [drink, setDrink] = useState();
+
+  useEffect(() => {
+    setBurger(JSON.parse(localStorage.getItem("burger")));
+    setSideDish(JSON.parse(localStorage.getItem("sideDish")));
+    setDesert(JSON.parse(localStorage.getItem("desert")));
+    setDrink(JSON.parse(localStorage.getItem("drink")));
+  }, []);
+
+  const burgerPrice = parseFloat(burger?.price.$numberDecimal);
+  const sideDishPrice = parseFloat(sideDish?.price.$numberDecimal);
+  const desertPrice = parseFloat(desert?.price.$numberDecimal);
+  const drinkPrice = parseFloat(drink?.price.$numberDecimal);
+  const totalPrice = burgerPrice + sideDishPrice + desertPrice + drinkPrice;
+
   return (
     <main className="recapitulatif2">
       <section id="sectionCommande">
@@ -30,59 +49,62 @@ function Recapitulatif2() {
         </div>
       </section>
       <img class="line" src="images\Line 5.png" alt="" />
-      <section class="choixMenu">
-        <div>
-          <input class="radioButton" type="radio" name="" checked="true" />
-          <img class="menuImg" src="images\darkBurger.png" alt="" />
-        </div>
-        <h2>Le Dark Burger</h2>
-        <div>
-          <p>Modifier</p>
-        </div>
-        <p>5,5.€</p>
-      </section>
-      <img class="line" src="images\Line 5.png" alt="" />
-      <section class="choixMenu">
-        <div>
-          <input class="radioButton" type="radio" name="" checked="true" />
-          <img class="menuImg" src="images\frites-sel.jpg" alt="" />
-        </div>
-        <h2>Frites</h2>
-        <div>
-          <p>Modifier</p>
-        </div>
-        <p>3,50€</p>
-      </section>
-      <img class="line" src="images\Line 5.png" alt="" />
-      <section class="choixMenu">
-        <div>
-          <input class="radioButton" type="radio" name="" checked="true" />
-          <img class="menuImg" src="images\gaufres.jpg" alt="" />
-        </div>
-        <h2>Gauffres</h2>
-        <div>
-          <p>Modifier</p>
-        </div>
-        <p>3,50€</p>
-      </section>
-      <img class="line" src="images\Line 5.png" alt="" />
-      <section class="choixMenu">
-        <div>
-          <input class="radioButton" type="radio" name="" checked="true" />
-          <img class="menuImg" src="images\cristalline.jpeg" alt="" />
-        </div>
-        <h2>Eau</h2>
-        <div>
-          <p>Modifier</p>
-        </div>
-        <p>1€</p>
-      </section>
-      <img class="line" src="images\Line 5.png" alt="" />
+
+      <React.Fragment>
+        <section className="choixMenu">
+          <div>
+            <img className="menuImg" src={burger?.image} alt="" />
+          </div>
+          <h2>
+            {burger?.name} - {burger?.price.$numberDecimal}$
+          </h2>
+          <p className="description">{burger?.description}</p>
+        </section>
+        <img className="line" src="/images\Line 5.png" alt="" />
+      </React.Fragment>
+
+      <React.Fragment>
+        <section className="choixMenu">
+          <div>
+            <img className="menuImg" src={sideDish?.image} alt="" />
+          </div>
+          <h2>
+            {sideDish?.name} - {sideDish?.price.$numberDecimal}$
+          </h2>
+          <p className="description">{sideDish?.description}</p>
+        </section>
+        <img className="line" src="/images\Line 5.png" alt="" />
+      </React.Fragment>
+      <React.Fragment>
+        <section className="choixMenu">
+          <div>
+            <img className="menuImg" src={desert?.image} alt="" />
+          </div>
+          <h2>
+            {desert?.name} - {desert?.price.$numberDecimal}$
+          </h2>
+          <p className="description">{desert?.description}</p>
+        </section>
+        <img className="line" src="/images\Line 5.png" alt="" />
+      </React.Fragment>
+      <React.Fragment>
+        <section className="choixMenu">
+          <div>
+            <img className="menuImg" src={drink?.image} alt="" />
+          </div>
+          <h2>
+            {drink?.name} - {drink?.price.$numberDecimal}$
+          </h2>
+          <p className="description">{drink?.description}</p>
+        </section>
+        <img className="line" src="/images\Line 5.png" alt="" />
+      </React.Fragment>
+
       <div id="lastSection">
         <section id="section">
           <div id="prixCommande">
             <div id="numeroCommande">Commande TITI03FTP092201</div>
-            <p>15€</p>
+            <p>{totalPrice}$</p>
           </div>
           <Link to="/paiment">
             <button id="paimentButton">Payer</button>

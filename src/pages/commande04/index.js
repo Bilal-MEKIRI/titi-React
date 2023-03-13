@@ -9,7 +9,7 @@ import { URL } from "../../utils/composants/urls";
 
 function Commande4() {
   const [drinks, setDrinks] = useState([]);
-  const [chooseProduct, setChooseProduct] = useState();
+  const [choosedProduct, setChooseProduct] = useState();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -30,9 +30,13 @@ function Commande4() {
   }
 
   function next() {
-    if (chooseProduct !== undefined) {
-      localStorage.setItem("drink", chooseProduct);
-      navigate("/recapitulatif");
+    if (choosedProduct !== undefined) {
+      fetch("https://titi.startwin.fr/products/" + choosedProduct)
+        .then((res) => res.json())
+        .then(function (data) {
+          localStorage.setItem("drink", JSON.stringify(data));
+          navigate("/recapitulatif");
+        });
     }
   }
 

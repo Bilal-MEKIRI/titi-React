@@ -31,8 +31,12 @@ function Commande3() {
 
   function next() {
     if (choosedProduct !== undefined) {
-      localStorage.setItem("desert", choosedProduct);
-      navigate("/commande4");
+      fetch("https://titi.startwin.fr/products/" + choosedProduct)
+        .then((res) => res.json())
+        .then(function (data) {
+          localStorage.setItem("desert", JSON.stringify(data));
+          navigate("/commande4");
+        });
     }
   }
 
