@@ -35,13 +35,13 @@ function Recapitulatif2() {
           </div>
           <div id="clickAndCollect2">
             <div id="images">
-              <img src="images\Group 21.png" alt="" />
+              <img className="previous" src={burger?.image} alt="" />
               <img src="images\Line 12.png" alt="" />
-              <img src="images\Group 20.png" alt="" />
+              <img className="previous" src={sideDish?.image} alt="" />
               <img src="images\Line 13.png" alt="" />
-              <img src="images\Group 19.png" alt="" />
+              <img className="previous" src={desert?.image} alt="" />
               <img src="images\Line 14.png" alt="" />
-              <img src="images\Group 18.png" alt="" />
+              <img className="previous" src={drink?.image} alt="" />
               <img src="images\Line 17.png" alt="" />
             </div>
             <Link href="#">Paiment</Link>

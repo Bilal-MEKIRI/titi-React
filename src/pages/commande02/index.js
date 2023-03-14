@@ -12,6 +12,12 @@ function Commande2() {
   const [choosedProduct, setChoosedProduct] = useState();
   const navigate = useNavigate();
 
+  const [burger, setBurger] = useState();
+
+  useEffect(() => {
+    setBurger(JSON.parse(localStorage.getItem("burger")));
+  }, []);
+
   useEffect(() => {
     const fetchSideDishes = async () => {
       try {
@@ -56,7 +62,7 @@ function Commande2() {
           </div>
           <div id="clickAndCollect2">
             <div id="images">
-              <img src="images\Group 21.png" alt="" />
+              <img className="actual" src={burger?.image} alt="" />
               <img src="images\Line 12.png" alt="" />
               <img src="images\Group 20.png" alt="" />
               <img src="images\Line 13.png" alt="" />

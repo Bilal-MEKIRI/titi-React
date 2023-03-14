@@ -12,6 +12,16 @@ function Commande4() {
   const [choosedProduct, setChooseProduct] = useState();
   const navigate = useNavigate();
 
+  const [burger, setBurger] = useState();
+  const [sideDish, setSideDish] = useState();
+  const [desert, setDesert] = useState();
+
+  useEffect(() => {
+    setBurger(JSON.parse(localStorage.getItem("burger")));
+    setSideDish(JSON.parse(localStorage.getItem("sideDish")));
+    setDesert(JSON.parse(localStorage.getItem("desert")));
+  }, []);
+
   useEffect(() => {
     const fetchDrinks = async () => {
       try {
@@ -58,11 +68,11 @@ function Commande4() {
           </div>
           <div id="clickAndCollect2">
             <div id="images">
-              <img src="/images\Group 21.png" alt="" />
+              <img className="previous" src={burger?.image} alt="" />
               <img src="/images\Line 12.png" alt="" />
-              <img src="/images\Group 20.png" alt="" />
+              <img className="previous" src={sideDish?.image} alt="" />
               <img src="/images\Line 13.png" alt="" />
-              <img src="/images\Group 19.png" alt="" />
+              <img className="actual" src={desert?.image} alt="" />
               <img src="/images\Line 14.png" alt="" />
               <img src="/images\Group 18.png" alt="" />
               <img src="/images\Line 17.png" alt="" />

@@ -78,6 +78,16 @@ nav{
   justify-content: start;
   align-items: center;
 }
+.actual{
+  width: 140px;
+  height: 140px;
+  border-radius: 20%;
+}
+.previous{
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+}
 a{
   text-decoration: none;
   color: #5F6368;

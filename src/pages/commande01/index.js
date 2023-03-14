@@ -12,6 +12,12 @@ function Commande1() {
   const [choosedProduct, setChoosedProduct] = useState();
   const navigate = useNavigate();
 
+  const [burger, setBurger] = useState();
+
+  useEffect(() => {
+    setBurger(JSON.parse(localStorage.getItem("burger")));
+  }, []);
+
   useEffect(() => {
     const fetchBurgers = async () => {
       try {
