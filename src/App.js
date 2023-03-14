@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
-import Slide from "./components/slide";
 import Template from "./components/template";
 import Collect from "./pages/click&collect";
 import Commande1 from "./pages/commande01";

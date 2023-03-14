@@ -1,5 +1,4 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./homepage.scss";
 import Slide from "../../components/slide";
