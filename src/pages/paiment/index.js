@@ -18,7 +18,12 @@ function Paiment() {
           <section class="choixModePaiment">
             <div class="section">
               <div>
-                <input class="radioButton" type="radio" name="choixMenu" />
+                <input
+                  id="paypal"
+                  class="radioButton"
+                  type="radio"
+                  name="choixMenu"
+                />
                 <div class="modePaiment">
                   <img src="images\paypal.png" alt=""></img>
                 </div>
@@ -31,7 +36,12 @@ function Paiment() {
           <section class="choixModePaiment">
             <div class="section">
               <div>
-                <input class="radioButton" type="radio" name="choixMenu" />
+                <input
+                  id="visa"
+                  class="radioButton"
+                  type="radio"
+                  name="choixMenu"
+                />
                 <div class="modePaiment">
                   <img src="images\visa.png" alt=""></img>
                 </div>
@@ -44,7 +54,12 @@ function Paiment() {
           <section class="choixModePaiment">
             <div class="section">
               <div>
-                <input class="radioButton" type="radio" name="choixMenu" />
+                <input
+                  id="bitcoin"
+                  class="radioButton"
+                  type="radio"
+                  name="choixMenu"
+                />
                 <div class="modePaiment">
                   <img src="images\bitcoin.png" alt=""></img>
                 </div>
