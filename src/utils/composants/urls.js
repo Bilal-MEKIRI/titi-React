@@ -1,6 +1,6 @@
 export const URL = {
-  fetchBurgers: "https://titi.startwin.fr/products/type/burger",
-  fetchSideDishes: "https://titi.startwin.fr/products/type/accompagnement",
-  fetchDeserts: "https://titi.startwin.fr/products/type/dessert",
-  fetchDrinks: "https://titi.startwin.fr/products/type/boisson",
+  fetchBurgers: "http://localhost:3000/products/burger",
+  fetchSideDishes: "http://localhost:3000/products/accompagnement",
+  fetchDeserts: "http://localhost:3000/products/dessert",
+  fetchDrinks: "http://localhost:3000/products/boisson",
 };

@@ -39,7 +39,7 @@ function Commande3() {
 
   function next() {
     if (choosedProduct !== undefined) {
-      fetch("https://titi.startwin.fr/products/" + choosedProduct)
+      fetch(`http://localhost:3000/product/${choosedProduct}`)
         .then((res) => res.json())
         .then(function (data) {
           localStorage.setItem("desert", JSON.stringify(data));
@@ -96,7 +96,7 @@ function Commande3() {
                   <img className="menuImg" src={element.image} alt="" />
                 </div>
                 <h2>
-                  {element.name} - {element.price.$numberDecimal}$
+                  {element.name} - {element.price}$
                 </h2>
                 <p className="description">{element.description}</p>
               </section>
