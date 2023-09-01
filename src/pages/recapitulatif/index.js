@@ -16,10 +16,10 @@ function Recapitulatif() {
     setDrink(JSON.parse(localStorage.getItem("drink")));
   }, []);
 
-  const burgerPrice = parseFloat(burger?.price.$numberDecimal);
-  const sideDishPrice = parseFloat(sideDish?.price.$numberDecimal);
-  const desertPrice = parseFloat(desert?.price.$numberDecimal);
-  const drinkPrice = parseFloat(drink?.price.$numberDecimal);
+  const burgerPrice = parseFloat(burger?.price);
+  const sideDishPrice = parseFloat(sideDish?.price);
+  const desertPrice = parseFloat(desert?.price);
+  const drinkPrice = parseFloat(drink?.price);
   const totalPrice = burgerPrice + sideDishPrice + desertPrice + drinkPrice;
 
   return (
@@ -55,7 +55,7 @@ function Recapitulatif() {
             <img className="menuImg" src={burger?.image} alt="" />
           </div>
           <h2>
-            {burger?.name} - {burger?.price.$numberDecimal}$
+            {burger?.name} - {burger?.price}$
           </h2>
           <p className="description">{burger?.description}</p>
         </section>
@@ -68,31 +68,33 @@ function Recapitulatif() {
             <img className="menuImg" src={sideDish?.image} alt="" />
           </div>
           <h2>
-            {sideDish?.name} - {sideDish?.price.$numberDecimal}$
+            {sideDish?.name} - {sideDish?.price}$
           </h2>
           <p className="description">{sideDish?.description}</p>
         </section>
         <img className="line" src="/images\Line 5.png" alt="" />
       </React.Fragment>
+
       <React.Fragment>
         <section className="choixMenu">
           <div>
             <img className="menuImg" src={desert?.image} alt="" />
           </div>
           <h2>
-            {desert?.name} - {desert?.price.$numberDecimal}$
+            {desert?.name} - {desert?.price}$
           </h2>
           <p className="description">{desert?.description}</p>
         </section>
         <img className="line" src="/images\Line 5.png" alt="" />
       </React.Fragment>
+
       <React.Fragment>
         <section className="choixMenu">
           <div>
             <img className="menuImg" src={drink?.image} alt="" />
           </div>
           <h2>
-            {drink?.name} - {drink?.price.$numberDecimal}$
+            {drink?.name} - {drink?.price}$
           </h2>
           <p className="description">{drink?.description}</p>
         </section>

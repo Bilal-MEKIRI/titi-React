@@ -134,7 +134,7 @@ export default function Template() {
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42004.0305296544!2d2.6125700133751226!3d48.8534065973401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e61aad94e49cdf%3A0x40b82c3688c4980!2s77200%20Torcy!5e0!3m2!1sen!2sfr!4v1673272663735!5m2!1sen!2sfr" />
           </div>
           <div id="footer4">
-            <Link class="footerLink" href="#">
+            <Link class="footerLink" to="contact">
               Contact
             </Link>
             <Link class="footerLink" href="#">

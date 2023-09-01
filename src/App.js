@@ -13,6 +13,7 @@ import Paiment from "./pages/paiment";
 import Paiment2 from "./pages/paiment2";
 import Recapitulatif from "./pages/recapitulatif";
 import Recapitulatif2 from "./pages/recapitulatif2";
+import Contact from "./pages/contact";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/recapitulatif" element={<Recapitulatif />}></Route>
         <Route path="/recapitulatif2" element={<Recapitulatif2 />}></Route>
         <Route path="/confirmation" element={<Confirmation />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
       </Route>
     </Routes>
   );
